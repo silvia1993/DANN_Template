@@ -42,8 +42,8 @@ eval_transform = transforms.Compose([transforms.Resize(256),
 
 
 # Prepare Pytorch train/test Datasets
-source_dataset = Dataset(DATA_DIR, dataset='photo',  transform=train_transform)
-target_dataset = Dataset(DATA_DIR, dataset='art_painting', transform=eval_transform)
+source_dataset = Dataset(DATA_DIR, dataset='cartoon',  transform=train_transform)
+target_dataset = Dataset(DATA_DIR, dataset='sketch', transform=eval_transform)
 
 # Check dataset sizes
 print('Source Dataset: {}'.format(len(source_dataset)))
