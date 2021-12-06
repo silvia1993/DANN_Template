@@ -9,12 +9,7 @@ from data import Dataset
 from alexnet import AlexNet
 from torch.utils.model_zoo import load_url as load_state_dict_from_url
 
-# Clone github repository with data
-if not os.path.isdir('./PACS'):
-    !git clone https://github.com/MachineLearning2020/Homework3-PACS
-    !mv 'Homework3-PACS' 'PACS'
-
-DATA_DIR = ''
+DATA_DIR = '/content/drive/MyDrive/PACS/PACS/'
 
 model_urls = {
     'alexnet': 'https://download.pytorch.org/models/alexnet-owt-4df8aa71.pth',

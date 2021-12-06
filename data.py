@@ -32,7 +32,7 @@ class Dataset(VisionDataset):
         super(Dataset, self).__init__(root, transform=transform)
 
         self.root = root
-        self.images, self.labels = _dataset_info('txt_lists/'+dataset+'.txt')
+        self.images, self.labels = _dataset_info('/content/drive/MyDrive/DANN_Template/txt_lists/'+dataset+'.txt')
 
 
     def __getitem__(self, index):
